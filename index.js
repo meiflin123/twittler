@@ -22,7 +22,7 @@
           $tweet.append([date, timeago, $('<br><br>')])
 
           var $selector = $('<a></a>')
-          $selector.attr({'href': 'usertimeline.html', 'target': '_self','class': 'username', 'data-user': tweet.user,});
+          $selector.attr({'href': '#', 'target': '_self','class': 'username', 'data-user': tweet.user,});
           $selector.text('@' + tweet.user + ' : ' + tweet.message);
       
     
