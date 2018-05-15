@@ -2,31 +2,20 @@
 <html>
   <head>
     <meta charset = "utf-8">
-    <title>Twitter Wall</title>
-    <link href="https://github.com/meiflin123/hrsf99-twittler/blob/master/index.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
     <script src="jquery.js"></script>
+    <script src="index.js"></script>>
     <script src="data_generator.js"></script>
+    <script src="jquery.timeago.js" type="text/javascript"></script>
+    
+    <title>Twitter Wall</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    
+    
 
-    <script>
-
-      $(document).ready(function(){
-        var $body = $('body');
-        $body.html('');
-
-        var index = streams.home.length - 1;
-        while(index >= 0){
-          var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
-          $tweet.appendTo($body);
-          index -= 1;
-        }
-
-      });
-
-    </script>
+      
+    
+    
   </body>
 </html>
